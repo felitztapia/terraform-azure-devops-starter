@@ -9,7 +9,7 @@ resource "random_password" "sql" {
 }
 
 resource "azurerm_sql_server" "example" {
-  name                         = "sqldb-${var.appname}-${var.environment}"
+  name                         = "felitzdb-${var.appname}-${var.environment}"
   resource_group_name          = var.resource_group
   location                     = var.location
   version                      = "12.0"
